@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Attempted Murder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="story-panel" id="prologue">
+        <div class="content">
+            <h2>Prologue</h2>
+            <p class="first">A crow caws in the distance, pulling you from your slumber. You slowly open your eyes and slide out of bed, feet coming to rest on the hardwood floor. You lazily stretch and make your way over to the window.</p>
+            <p class="second">You pull the heavy curtains aside and look outside, shielding your eyes as they adjust to the light. Once you can see clearly, you smile. The sky is overcast, and the forest behind your house is full of dark shadows that just touch the edge of your yard. Dark birds swoop in and out of the tree canopy.</p>
+            <p class="third">You nod to yourself. Today is the perfect day for...</p>
+
+            <!-- I know this isn't techhhhnically proper, but it's the title and I wanted it appearing after the prologue; sorry! -->
+            <h1 class="prologue">An Attempted Murder</h1>
+            <nav>
+                <a href="#intro" class="btn btn--appear">Next</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="intro">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>After pulling on some clothes, you make your way downstairs to the kitchen. As you eat breakfast, you consider what you know about crows. You’ve heard they’ll eat anything, but that things like nuts are good for their health and that they love nuts. You’ve also heard that they love shiny objects.</p>
+            <p>Looking around the kitchen, your eyes settle on two things: a jar of nuts that you received as a gift and haven’t really eaten and a slightly munched up spoon that you accidentally dropped down the garbage disposal last week. One of those seems like it would be a good gift for a crow. You choose the...</p>
+            <nav>
+                <a href="#nuts" class="btn" onclick="return animate();">Jar of Nuts</a>
+                <a href="#spoon" class="btn">Metal Spoon</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="nuts">
+        <div class="content">
+            <p>You grab the jar of nuts and head outside. There’s an old stump in your yard just before the start of the forest. You place a couple of nuts there and head back to your porch to watch.</p>
+            <p>Soon you spy a crow landing on the stump and poking at the nuts. It’s working! The crow makes quick work of the nuts you put down on the stump and looks in your direction. You think you should put some more nuts out. You put them...</p>
+            <img src="images/Crow-01.svg" class="small" alt="A crow silhouette">
+            <nav>
+                <a href="#stump" class="btn">On the Stump</a>
+                <a href="#ground" class="btn">On the Ground</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="spoon">
+        <div class="content">
+            <p>You grab the spoon off the counter and head outside. With the day being as overcast as it is, you wonder where the best place is to maximize the visibility of the spoon. You settle on putting it in the forked branches of one of the trees on the edge of the forest. Sticking out like that allows the spoon to catch some of the light filtering through the clouds. Satisfied, you head back to your porch.</p>
+            <p>Once you get there, however, you turn around and notice that the spoon is gone. You run back to the tree to make sure it didn’t just fall on the ground, but the spoon is nowhere to be seen. Was it taken? You debate whether to place another spoon or try the nuts instead. You...</p>
+            <nav>
+                <a href="#another_spoon" class="btn">Take Another Spoon</a>
+                <a href="#nuts" class="btn">Take Nuts Instead</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="stump">
+        <div class="content">
+            <p>You walk back out to the stump and put more nuts down. Before you’ve even made it all the way back to your porch, you hear the sound of wings. Turning around, you see that you’ve attracted several more crows to the stump! You weren’t prepared for this many crows to show up this quickly. Luckily, you still have more nuts in the jar.</p>
+            <p>The crows continue to poke around the stump after they finish eating the nuts you left them. You consider whether you should approach to offer them more nuts, or whether it would be better to hang back a bit so you don’t startle them. You decide to...</p>
+            <img src="images/Crow-03.svg" class="small" alt="A crow silhouette">
+            <img src="images/Crow-01.svg" class="small" alt="A crow silhouette">
+            <img src="images/Crow-02.svg" class="small" alt="A crow silhouette">
+            <nav>
+                <a href="#success" class="btn">Approach</a>
+                <a href="#failed" class="btn">Hang Back</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="ground">
+        <div class="content">
+            <p>The crow is still looking at you quizzically as you bend down and place some of the nuts on the ground. You back up a step and the crow hops toward you, eagerly taking the nuts. You decide to...</p>
+            <img src="images/Crow-01.svg" class="small" alt="A crow silhouette">
+            <nav>
+                <a href="#more_nuts_again" class="btn">Offer More Nuts</a>
+                <a href="#attempt" class="btn">Offer Spoon</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="another_spoon">
+        <div class="content">
+            <p>You run back inside to the kitchen and look for another spoon you can use. You don’t have any more munched spoons, but you find a pair that don’t seem to match any of your other silverware. You’re pretty sure you bought them from the dollar store when you first moved out on your own. You take the spoons, along with a handful of nuts, and run back outside. You place the spoon and a couple of nuts in the same spot as the last one. This time, instead of turning your back on the tree, you back away slowly, doing your best not to trip and fall.</p>
+            <p>It pays off, and you are thrilled to see a crow land in the tree, grab the spoon, and then cock its head to look at you. You consider the best way to encourage the crow to come closer. You...</p>
+            <img src="images/Crow-01.svg" class="small" alt="A crow silhouette">
+            <nav>
+                <a href="#ground" class="btn">Offer Nuts</a>
+                <a href="#attempt" class="btn">Offer Spoon</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel" id="more_nuts_again">
+        <div class="content">
+            <p>You put down a few more nuts and suddenly several more crows swoop down to join in. You weren’t prepared for this many crows to show up this quickly. Luckily, you still have more nuts with you.</p>
+            <p>The crows continue to poke around the yard after they finish eating the nuts you left them. You consider whether you should approach to offer them more nuts, or whether it would be better to hang back a bit so you don’t startle them. You decide to...</p>
+            <img src="images/Crow-03.svg" class="small" alt="A crow silhouette">
+            <img src="images/Crow-01.svg" class="small" alt="A crow silhouette">
+            <img src="images/Crow-02.svg" class="small" alt="A crow silhouette">
+            <nav>
+                <a href="#success" class="btn">Approach</a>
+                <a href="#failed" class="btn">Hang Back</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel story-panel--ending" id="failed">
+        <div class="content--ending">
+            <h3>A Failed Murder</h3>
+            <p>You decide you don’t want to scare off the crows, so you hang back on your porch and just enjoy watching them. Soon they grow tired of investigating the stump and fly away.</p>
+            <p>Oh well. At least you were able to give them a little treat!</p>
+            <img src="images/FlyingCrows.jpeg" alt="A murder of crows flying away.">
+            <nav>
+                <a href="#intro" class="btn btn--restart">Restart from Introduction</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel story-panel--ending" id="attempt">
+        <div class="content--ending">
+            <h3>An Attempt Was Made</h3>
+            <p>Holding the spoon in your hand, you wave it, attempting to catch some of the sunlight. The crow flaps its wings and lands on the ground in front of you, doing a little dance. It isn’t a murder, but this one crow sure is happy!</p>
+            <img src="images/HappyCrow.png" class="attempt" alt="A crow with its mouth open sitting on the ground.">
+            <nav>
+                <a href="#intro" class="btn btn--restart">Restart from Introduction</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="story-panel story-panel--ending" id="success">
+        <div class="content--ending">
+            <h3>A Successful Murder</h3>
+            <p>You approach them and the crows scatter. Wondering whether you made the right choice, you place another handful of nuts on the ground and back away a few steps. Pretty soon, the crows have returned, bringing a few more friends with them. You feel the crows watching you, and they seem pleased with your nutty offerings.</p>
+            <p>As you watch the murder happily eating, you notice one small crow hop toward you. It drops something shiny on the ground a little bit away from your feet and looks up at you before hopping back to its group. It seems you’ve made some friends.</p> 
+            <h4>Success!</h4>
+            <img src="images/SittingCrows.jpeg" class="success" alt="A murder of crows in some bare trees.">
+            <nav>
+                <a href="#intro" class="btn btn--restart">Restart from Introduction</a>
+            </nav>
+        </div>
+    </div>
+    
+</body>
+</html>

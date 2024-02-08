@@ -1,0 +1,181 @@
+/* CSS Simple Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables and Body */
+
+:root {
+    --dark: #1b1b1d;
+    --background: #eddbc8;
+    --accent1: #b67f07;
+    --accent2: #861d06;
+    --hover: #a95f3f;
+    --end: #003c26;
+    --titles: 'Tangerine', cursive;
+    --copy: 'Libre Baskerville', serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--dark);
+    text-align: center;
+    font-family: var(--copy);
+    font-size: 16px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.content--ending {
+    margin-top: 0;
+}
+
+/* Panel Design */
+
+.story-panel {
+    height: 100vh;
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    background-color: var(--background);
+    color: var(--dark);
+}
+
+.story-panel--ending {
+    background-color: var(--end);
+    color: var(--background);
+}
+
+h1 {
+    color: var(--accent2);
+    font-family: var(--titles);
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: 20px;
+    animation: 2s ease-in 7s both appear;
+}
+
+h2 {
+    font-family: var(--titles);
+    font-size: 48px;
+}
+
+h3 {
+    font-family: var(--titles);
+    color: var(--accent1);
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 20px 100px;
+    line-height: 1.5;
+}
+
+p.first {
+    animation: 2s ease-in both appear;
+}
+
+p.second {
+    animation: 2s ease-in 2s both appear;
+}
+
+p.third {
+    animation: 2s ease-in 5s both appear;
+}
+
+img {
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+img.small {
+    height: 150px;
+}
+
+.fade {
+    animation: 4s linear 1 forwards appear;
+}
+
+/* Buttons */
+
+nav {
+    display: flex;
+    width: 720px;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+
+a {
+    width: 270px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 18px 0;
+    font-size: 20px;
+    font-family: var(--copy);
+    text-decoration: none;
+    background-color: var(--accent1);
+    color: var(--dark);
+    box-shadow: 3px 3px 5px var(--dark);
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: var(--hover);
+    box-shadow: 3px 3px 5px inset var(--dark);
+}
+
+.btn--appear {
+    animation: 2s ease-in 8s both appear;
+}
+
+.btn--restart {
+    animation: 1.5s ease-in-out infinite alternate colorchange;
+    width: 300px;
+    height: 40px;
+    margin-top: -40px;
+    padding: 9px 0;
+}
+
+/* Image Animations and Keyframes */
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes colorchange {
+    from { background-color: var(--accent1); }
+    to { background-color: var(--background); }
+}
+
+@keyframes dance {
+    0% { transform: rotate(10deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: scale(1.1,1.1); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+img.attempt {
+    animation: 2s ease-in-out infinite alternate dance;
+}
+
+@keyframes grayfilter {
+    from { filter: grayscale(80%); }
+    to { filter: grayscale(0%); }
+}
+
+img.success {
+    animation: 5s linear infinite alternate grayfilter;
+}
